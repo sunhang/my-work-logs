@@ -1,3 +1,21 @@
+2015-12-26---------------------------------------------------------------------
+Mac OS X终端把预装的 Emacs 22 替换为新版的24
+
+新安装的 GNU Emacs，带GUI的，可是终端还是预装的 Emacs 22，想替换为新安装的 Emacs 24
+
+备份预装的 Emacs 22 启动脚本：
+sudo mv /usr/bin/emacs /usr/bin/oldemacs
+
+新建 emacs 脚本文件：
+vi emacs
+#!/bin/sh
+/Applications/Emacs.app/Contents/MacOS/Emacs -nw "$@"
+
+替换：
+sudo mv emacs /usr/bin
+chmod +x /usr/bin/emacs
+
+
 2015-12-25---------------------------------------------------------------------
 ctrl+z：可以把一个任务放到后台;
 fg:可以把任务提到前台;
