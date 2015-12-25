@@ -1,0 +1,6 @@
+2015-12-25---------------------------------------------------------------------
+android:Theme.Material这个Theme不能用在api-level 20及以下的工程中，所以为了实用它，需要把它放到values-v21中；
+
+并且AppCompatActivity不能使用这个Theme。
+
+可以在view中添加属性android:foreground="?selectableItemBackground"来使得view具有ripple效果。

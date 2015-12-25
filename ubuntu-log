@@ -1,0 +1,10 @@
+2015-12-25---------------------------------------------------------------------
+每次打开android studio时，都是在终端中敲入cd /opt/android-studio/bin ./studio.sh。今天决定添加快捷方式。
+
+添加了android studio的快捷方式后，点击它时，发现ubuntu提示
+tools.jar' seems to be not in studio classpath. please ensure java_home points to jdk rather than jre
+于是，在/usr/share/applications目录下修改文件jetbrains-studio.desktop.
+Exec被修改成
+Exec=env JDK_HOME=/opt/jdk1.8.0_20/ "/opt/android-studio/bin/studio.sh" %f
+保存。
+这样android studio的快捷方式就可以正常使用了。
