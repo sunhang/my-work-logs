@@ -4,3 +4,5 @@ android:Theme.Material这个Theme不能用在api-level 20及以下的工程中�
 并且AppCompatActivity不能使用这个Theme。
 
 可以在view中添加属性android:foreground="?selectableItemBackground"来使得view具有ripple效果。
+
+在使用CardView时，发现如果设置了CardView的setLayerType(View.LAYER_TYPE_HARDWARE, null)，那么CardView的Ripple效果就没有了。
