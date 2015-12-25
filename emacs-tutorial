@@ -2,3 +2,5 @@
 可以使用C-z来回到终端中，然后在终端中输入%emacs，在回到emacs中
 
 使用alias emacs='emacs -nw'命令，可以在终端中打开emacs,通过使用命令"emacs"，代替"emacs -nw"。但是要设置永久别名，需要保存到.bashrc中
+
+使用M-x revert-buffer，可以重新加载文件，起到刷新buffer的作用。
