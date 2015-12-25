@@ -1,0 +1,5 @@
+使用emacs作为git的编辑器
+git config --global core.editor emacs
+
+恢复默认的git编辑器
+git config --global --unset-all core.editor

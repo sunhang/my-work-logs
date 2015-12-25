@@ -1,0 +1,2 @@
+使用emacs作为git的编辑器
+git config --global core.editor emacs
