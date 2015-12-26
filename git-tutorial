@@ -1,3 +1,27 @@
+2015-12-26---------------------------------------------------------------------
+查看远程仓库信息
+git remote --verbose(or -v)
+
+添加远程仓库
+git remote add [shortname] [url]
+
+从远程仓库抓取数据
+git fetch [remote-name]
+
+git fetch origin 会抓取从你上次克隆以来别人上传到此远程仓库中的所有更新
+
+git pull和git fetch的区别：
+fetch 命令只是将远端的数据拉到本地仓库，并不自动合并到当前工作分支，只有当你确实准备好了，才能手工合并。
+
+pull 命令自动抓取数据下来，然后将远端分支自动合并到本地仓库中当前分支。
+
+git remote show [remote-name] 查看某个远程仓库的详细信息，比如要看所克隆的origin仓库，可以运行：git remote show origin
+
+git remote rename [old name] [new name] 修改某个远程仓库在本地的简称
+
+git remote rm [remote-name] 移除对应的远程仓库
+
+
 使用emacs作为git的编辑器
 git config --global core.editor emacs
 
