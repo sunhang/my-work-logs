@@ -21,6 +21,13 @@ git remote rename [old name] [new name] 修改某个远程仓库在本地的简�
 
 git remote rm [remote-name] 移除对应的远程仓库
 
+当merge后，可能会有冲突，当调用git add，表明解决了冲突。
+
+git checkout -b [分支名] [远程名]/[分支名] 基于远程仓库中的那个分支，新建个本地分支。这样可以在上面编辑了。
+
+删除远程分支 git push [远程名] :[分支名]
+有种方便记忆这条命令的方法：记住我们不久前见过的 git push [远程名] [本地分支]:[远程分支] 语法，如果省略 [本地分支]，那就等于是在说“在这里提取空白然后把它变成[远程分支]”
+
 
 使用emacs作为git的编辑器
 git config --global core.editor emacs
