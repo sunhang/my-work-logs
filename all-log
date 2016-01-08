@@ -1,3 +1,14 @@
+2016-01-08-------------------------------------------------------------------------
+今天发现华为荣耀6不打印android log。在网上查找解决方法，如下：
+拨号键盘输入*#*#2846579#*#*，然后选择ProhectMenu,然后后台设置，然后LOG设置，LOG打开。
+
+
+2015-12-31----------------------------------------------------------------------
+研究了一下android Activity之间传递实现了Serializable接口的实例，通过打日志，发现传递的不是实例的引用，而是一个拥有相同数据的新的实例。代码如下：
+data i:100 j:200 data address >> com.sunhang.mymaterialstyle.MainActivity$Data@b9dd2af
+data i:100 j:200 data address >> com.sunhang.mymaterialstyle.MainActivity$Data@fc8fc13
+
+
 2015-12-29----------------------------------------------------------------------
 今天配置了emacs的java环境。
 首先是需要有个auto-complete和yasnippet包，这个我是有了。
@@ -11,6 +22,7 @@
 还有一步，可重要，也可坑了。
 编译Tags.java文件，并且运行它。结果生成的.java_base.tag太小，不能使用。它提示说classpath没有配置好。但是我查看了一下没有发现classpath配置存在的问题。
 于是我解压缩了java_base.tag.bz2，使用这个。
+
 
 2015-12-26-------------------------------
 http://stackoverflow.com/questions/32603634/why-the-string-converted-from-float-is-not-expected
