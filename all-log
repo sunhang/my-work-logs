@@ -16,6 +16,19 @@ I think it was caused by an invalid package archive file. The immediate fix is t
 http://emacs.stackexchange.com/questions/17823/wrong-type-argument-arrayp-nil
 
 
+今天发现在emacs中的shell的环境变量和使用系统终端中的环境变量不一样。使用echo $PATH命令发现
+emacs中的shell的环境变量：
+/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Emacs.app/Contents/MacOS/bin-x86_64-10_9:/Applications/Emacs.app/Contents/MacOS/libexec-x86_64-10_9
+系统终端中的环境变量:
+/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/adt-bundle-mac-x86_64-20130917/sdk/platform-tools:/usr/local/apache-tomcat-8.0.22/bin
+
+怎么解决这个问题呢：
+需要安装exec-path-from-shell，它在elpa中存在。
+参考网址：
+https://github.com/purcell/exec-path-from-shell
+http://stackoverflow.com/questions/8606954/path-and-exec-path-set-but-emacs-does-not-find-executable
+
+
 
 2016-01-08-------------------------------------------------------------------------
 今天发现华为荣耀6不打印android log。在网上查找解决方法，如下：
