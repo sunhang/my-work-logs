@@ -9,6 +9,12 @@ You should set GROOVY_HOME:
 
 然后在~/bash_profile中添加GROOVY_HOME。于是groovy就可以使用了。
 
+不知道怎么回事，突然emacs在minibuffer中提示wrong type argument : arrayp , nil
+于是，找到一个解决方法：
+I think it was caused by an invalid package archive file. The immediate fix is to delete <uer-emacs-directory>/elpa/archives/melpa/archive-contents; it will be rebuilt on the next package-initialize. Unfortunately, package.el is not very robust to this sort of failure.
+它来自于：
+http://emacs.stackexchange.com/questions/17823/wrong-type-argument-arrayp-nil
+
 
 
 2016-01-08-------------------------------------------------------------------------
