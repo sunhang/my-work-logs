@@ -1,3 +1,16 @@
+2016-01-09----------------------------------------------------------------------
+今天在mac上用homebrew安装了groovy。
+然后提示：
+==> Caveats
+You should set GROOVY_HOME:
+  export GROOVY_HOME=/usr/local/opt/groovy/libexec
+==> Summary
+🍺  /usr/local/Cellar/groovy/2.4.4: 54 files, 28M, built in 2.3 minutes
+
+然后在~/bash_profile中添加GROOVY_HOME。于是groovy就可以使用了。
+
+
+
 2016-01-08-------------------------------------------------------------------------
 今天发现华为荣耀6不打印android log。在网上查找解决方法，如下：
 拨号键盘输入*#*#2846579#*#*，然后选择ProhectMenu,然后后台设置，然后LOG设置，LOG打开。
